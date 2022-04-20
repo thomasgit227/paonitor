@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5"
+  }
+}
