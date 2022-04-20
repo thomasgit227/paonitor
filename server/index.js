@@ -1,13 +1,16 @@
 import express from 'express';
-// import bodyParser from 'body-parser';
+import bodyParser from 'body-parser';
 // import cors from 'cors';
+const PORT = process.env.PORT || 5000
 
 var program;
 
 const app = express()
 
-app.use(express.static(path.join(__dirname, 'public')))
-app.use(express.json())
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+
+app.use(bodyParser.json({limit: "32mb", extended: true}))
+app.use(bodyParser.urlencoded({limit: "32mb", extended: true}))
 // app.use(cors())
 
 app.get('/pi/', (req, res) => {
@@ -16,7 +19,7 @@ app.get('/pi/', (req, res) => {
 })
 
 app.post('/new-prog/', (req, res) => {
-    let prog = req.body
+    let prog = req.body.new;
     
     program = prog;
     res.status(201);
