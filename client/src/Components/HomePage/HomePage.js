@@ -12,17 +12,17 @@ const Home = () =>{
             <div class="buttonContainer">
                
                 <div className="col1">
-                    <Button color="primary" size="lg" className="buttonStyle">Button 1</Button>{' '}
-                    <Button color="primary" size="lg" className="buttonStyle">Button 2</Button>{' '}
-                    <Button color="primary" size="lg" className="buttonStyle">Button 3</Button>{' '}
-                    <Button color="primary" size="lg" className="buttonStyle">Button 4</Button>{' '}
+                    <Button style={{backgroundColor: '#384D48'}} size="lg" className="buttonStyle">Button 1</Button>{' '}
+                    <Button style={{backgroundColor: '#384D48'}} size="lg" className="buttonStyle">Button 2</Button>{' '}
+                    <Button style={{backgroundColor: '#384D48'}} size="lg" className="buttonStyle">Button 3</Button>{' '}
+                    <Button style={{backgroundColor: '#384D48'}} size="lg" className="buttonStyle">Button 4</Button>{' '}
                 </div>
                 
                 <div className="col2">
-                    <Button color="primary" size="lg" className="buttonStyle">Button 5</Button>{' '}
-                    <Button color="primary" size="lg" className="buttonStyle">Button 6</Button>{' '}
-                    <Button color="primary" size="lg" className="buttonStyle">Button 7</Button>{' '}
-                    <Button color="primary" size="lg" className="buttonStyle">Button 8</Button>{' '}
+                    <Button style={{backgroundColor: '#384D48'}} size="lg" className="buttonStyle">Button 5</Button>{' '}
+                    <Button style={{backgroundColor: '#384D48'}} size="lg" className="buttonStyle">Button 6</Button>{' '}
+                    <Button style={{backgroundColor: '#384D48'}} size="lg" className="buttonStyle">Button 7</Button>{' '}
+                    <Button style={{backgroundColor: '#384D48'}} size="lg" className="buttonStyle">Button 8</Button>{' '}
                 </div>
                 
             </div>
