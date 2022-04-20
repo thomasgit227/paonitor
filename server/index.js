@@ -6,18 +6,12 @@ const PORT = process.env.PORT || 5000
 var program;
 
 const app = express()
-const path = require("path")
 
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 app.use(bodyParser.json({limit: "32mb", extended: true}))
 app.use(bodyParser.urlencoded({limit: "32mb", extended: true}))
-app.use(express.static(path.join(__dirname, "client", "build")))
-
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
-});
-
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
+// app.use(cors())
 
 app.get('/pi/', (req, res) => {
     res.status(200);
