@@ -1,17 +1,17 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import cors from 'cors';
+const path = require('path')
 const PORT = process.env.PORT || 5000
 
 var program;
 
 const app = express()
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
-
-app.use(bodyParser.json({limit: "32mb", extended: true}))
-app.use(bodyParser.urlencoded({limit: "32mb", extended: true}))
-// app.use(cors())
+app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.json())
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
+app.use(cors())
 
 app.get('/pi/', (req, res) => {
     res.status(200);
@@ -25,3 +25,5 @@ app.post('/new-prog/', (req, res) => {
     res.status(201);
     res.send(program);
 })
+
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
