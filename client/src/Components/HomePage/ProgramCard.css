@@ -1,0 +1,66 @@
+.containerElement {
+    background-color: #B1A296;
+    cursor: pointer;
+    width: 15%;
+    height: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    border-radius: .25em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title {
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: #557A95;
+}
+
+div.title > h4 {
+    font-size: 1.5vw !important;
+    line-height: 1vw !important;
+    text-align: center;
+}
+
+.badge {
+    color: #5d5C61 !important;
+    font-size: 75% !important;
+    align-self: center !important;
+}
+
+.description {
+    visibility: hidden;
+    background-color: #557A95;
+    height: 65%;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    overflow: auto;
+    font-size: .75vw;
+}
+
+.containerElement:hover > div.description {
+    visibility: visible !important;
+}
