@@ -1,9 +1,10 @@
 html, body {
     height: 100%;
+    font-family: Verdana, sans-serif;
 }
 
 .pageContainer{
-    background-color: #E2E2E2;
+    background-color: #938e93;
     height: 100%;
     width: 100%;
     display: flex;
@@ -15,27 +16,30 @@ html, body {
 }
 
 .head{
-    background-color: #ACAD94;
+    background-color: #5d5C61;
     width: 96%;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin: 2%;
     border-radius: .05em;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonContainer{
-    background-color: #6E7271;
+    background-color: #7395AE;
     height: 80%;
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin-bottom: 5%;
-    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-top: 1%;
     overflow: auto;
     border-radius: .75em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .buttonStyle{
