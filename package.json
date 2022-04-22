@@ -18,7 +18,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "cd server && npm start",
-    "build": "cd server && npm start"
+    "start": "cd server && npm start"
   }
 }
