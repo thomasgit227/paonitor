@@ -8,7 +8,8 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-var program;
+
+var currentAction = '';
 
 // Middleware
 app.use(cors());
@@ -24,17 +25,15 @@ app.get("*", function (request, response) {
 });
 
 // Endpoints
-app.get('/pi/', (req, res) => {
+app.get('/action/', (req, res) => {
+  res.send(currentAction);
   res.status(200);
-  res.send(program);
 })
 
-app.post('/new-prog/', (req, res) => {
-  let prog = req.body.new;
-  
-  program = prog;
+app.post('/action/', (req, res) => {
+  currentAction = req.body.new;
+  res.send(currentAction);
   res.status(201);
-  res.send(program);
 })
 
 // Listener
