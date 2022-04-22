@@ -12,7 +12,7 @@ var program;
 const app = express()
 
 app.use(cors())
-app.use(express.static(path.join(__dirname, '../', 'client', 'build')))
+app.use(express.static(path.join(__dirname, '../', 'client', 'build', 'index.html')))
 app.use(express.json())
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
