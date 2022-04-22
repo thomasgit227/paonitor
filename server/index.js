@@ -12,7 +12,7 @@ var program;
 const app = express()
 
 app.use(cors())
-app.use(express.static(path.join(__dirname, '../', 'client')))
+app.use(express.static(path.join(__dirname, '../', 'client', 'build', 'static')))
 app.use(express.json())
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'ejs')
@@ -30,9 +30,9 @@ app.post('/new-prog/', (req, res) => {
     res.send(program);
 })
 
-// app.get("*", (req, res) => {
+app.get("*", (req, res) => {
 
-//     res.sendFile(path.resolve(__dirname,"../", "client", "src", "index.js"));
-// });
+    res.sendFile(path.resolve(__dirname,"../", "client", "src", "index.js"));
+});
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`));
