@@ -21,13 +21,14 @@ app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 // Endpoints
 app.get('/action/', (req, res) => {
-  console.log(currentAction)
   res.send(currentAction);
   res.status(200);
 })
 
 app.post('/action/', (req, res) => {
-  currentAction = req;
+  let tempAction = req.body
+  currentAction = tempAction
+  console.log()
   res.send(currentAction);
   res.status(201);
 })
