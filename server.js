@@ -25,15 +25,15 @@ app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 // Endpoints
 app.get('/action/', (req, res) => {
-  res.send(data.action);
   res.status(200);
+  res.send(data.action);
 })
 
 app.post('/action/', (req, res) => {
   let tempAction = req.body.action
   data.action = tempAction
-  res.send(currentAction);
   res.status(201);
+  res.send(data.action);
 })
 
 // Use Built Files
