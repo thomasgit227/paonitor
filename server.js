@@ -9,7 +9,11 @@ const PORT = process.env.PORT || 5000;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-var currentAction = 'nothing';
+// Seeded Data
+var data =
+	{
+		action: "nothing",
+	}
 
 // Middleware
 app.use(cors());
@@ -21,14 +25,13 @@ app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 // Endpoints
 app.get('/action/', (req, res) => {
-  res.send(currentAction);
+  res.send(data.action);
   res.status(200);
 })
 
 app.post('/action/', (req, res) => {
-  let tempAction = req.body
-  currentAction = tempAction
-  console.log()
+  let tempAction = req.body.action
+  data.action = tempAction
   res.send(currentAction);
   res.status(201);
 })
