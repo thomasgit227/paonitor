@@ -11,6 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd client && npm start",
     "start": "nodemon server.js",
+    "build": "cd client && npm run build",
     "develop": "concurrently --kill-others-on-fail \"npm run start\" \"npm run client\""
   },
   "dependencies": {

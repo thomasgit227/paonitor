@@ -18,9 +18,7 @@ const Home = () => {
                 <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
                 <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
                 <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
-                
             </div>
-
         </div>
     );
 
