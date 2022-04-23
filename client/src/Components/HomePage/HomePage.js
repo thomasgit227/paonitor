@@ -13,7 +13,7 @@ const Home = () => {
                 <ProgramCard title="Snake" description="Arcade Game"/>
                 <ProgramCard title="Stacker" description="Arcade Game"/>
                 <ProgramCard title="Pulse" description="Visuals"/>
-                <ProgramCard title="Rave" description="Visuals"/>
+                <ProgramCard title="Pao" description="Kuo-Pao Yang"/>
             </div>
         </div>
     );
