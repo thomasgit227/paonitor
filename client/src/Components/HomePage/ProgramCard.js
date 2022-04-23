@@ -1,15 +1,27 @@
 import React from 'react';
+import axios from 'axios';
 import './ProgramCard.css';
-import { Badge } from 'reactstrap';
 
-const ProgramCard = ({ title, type, description, output }) => {
+const updateAction = (actionName) => {
+    console.log(actionName)
+    axios.post("/action" , {
+        action: actionName
+    })
+}
+
+const ProgramCard = ({ title, description }) => {
 
     return (
-        <div class="containerElement">
+        <div class="containerElement" onClick={() => updateAction(title)}>
 
             <div class="title">
-                <h4>{title}&nbsp;<Badge color="light" pill> {type}</Badge></h4>
-                
+                {
+                // Note to Future Self
+                // without the arrow function this will run on render 
+                // foo() calls the function itself whereas foo passes the function to onClick
+                // () => uses an event wrapper to solve this
+                }
+                <h4>{title}&nbsp;</h4>
             </div>
 
             <div class="description">

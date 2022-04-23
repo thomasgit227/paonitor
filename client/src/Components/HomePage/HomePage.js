@@ -10,14 +10,14 @@ const Home = () => {
             <h1 class="head">Paonitor Control Panel</h1>
 
             <div class="buttonContainer">
-                <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
-                <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
-                <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
-                <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
-                <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
-                <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
-                <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
-                <ProgramCard title="Snake" type="game" description="Classic snake arcade game" output="progCard" />
+                <ProgramCard title="Snake" description="Classic snake arcade game"/>
+                <ProgramCard title="Snake" description="Classic snake arcade game"/>
+                <ProgramCard title="Snake" description="Classic snake arcade game"/>
+                <ProgramCard title="Snake" description="Classic snake arcade game"/>
+                <ProgramCard title="Snake" description="Classic snake arcade game"/>
+                <ProgramCard title="Snake" description="Classic snake arcade game"/>
+                <ProgramCard title="Snake" description="Classic snake arcade game"/>
+                <ProgramCard title="Snake" description="Classic snake arcade game"/>
             </div>
         </div>
     );
