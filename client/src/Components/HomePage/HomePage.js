@@ -14,6 +14,11 @@ const Home = () => {
                 <ProgramCard title="Stacker" description="Took too long to make"/>
                 <ProgramCard title="Pulse" description="Visuals"/>
                 <ProgramCard title="Pao" description="Kuo-Pao Yang"/>
+                <ProgramCard title="Rainbow" description="Double Rainbow: all the Way"/>
+                <ProgramCard title="Taco" description="Live Mas"/>
+                <ProgramCard title="Spiral" description="Square Spiral Pattern"/>
+                <ProgramCard title="ACM" description="Join Us or Else..."/>
+
             </div>
         </div>
     );
