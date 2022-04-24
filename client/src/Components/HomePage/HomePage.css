@@ -3,6 +3,10 @@ html, body {
     font-family: Verdana, sans-serif;
 }
 
+#root{
+    height: 100%;
+}
+
 .pageContainer{
     background-color: #938e93;
     height: 100%;
@@ -18,26 +22,51 @@ html, body {
 .head{
     background-color: #5d5C61;
     width: 96%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    height: 15%;
+    min-height: 60px;
+    display: flex;
+    overflow: visible;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
     margin: 2%;
+    margin-bottom: 5vh;
     border-radius: .05em;
     color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+div.head > h1 {
+    font-size: 250%  !important;
+    text-align: center;
+}
+
+.pageBody{
+    height: 100%;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    overflow: auto;
+}
+
 .buttonContainer{
     background-color: #7395AE;
-    height: 80%;
+    min-height: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     width: 70%;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin-bottom: 3%;
-    margin-top: 1%;
-    overflow: auto;
     border-radius: .75em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

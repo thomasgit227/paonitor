@@ -2,16 +2,15 @@
     background-color: #B1A296;
     cursor: pointer;
     width: 15%;
-    height: 30%;
+    height: 20vh;
+    min-width: 100px;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     align-content: center;
     overflow: hidden;
     border-radius: .25em;
@@ -20,6 +19,7 @@
 
 .title {
     height: 35%;
+    min-height: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,8 +32,7 @@
 }
 
 div.title > h4 {
-    font-size: 1.5vw !important;
-    line-height: 1vw !important;
+    font-size: 3vh;
     text-align: center;
 }
 
@@ -46,19 +45,16 @@ div.title > h4 {
 .description {
     visibility: hidden;
     background-color: #557A95;
-    height: 65%;
+    height: auto;
+    min-height: 65%;
     width: 100%;
-    padding: 1%;
+    padding: 3%;
     display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     align-content: center;
     text-align: center;
-    overflow: auto;
-    font-size: .75vw;
+    font-size: 1.9vh;
 }
 
 .containerElement:hover > div.description {
