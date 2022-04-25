@@ -21,11 +21,11 @@ const ProgramCard = ({ title, description }) => {
                 // foo() calls the function itself whereas foo passes the function to onClick
                 // () => uses an event wrapper to solve this
                 }
-                <h4>{title}</h4>
+                <div><h4>{title}</h4></div>
             </div>
 
             <div class="description">
-                <p>{description}</p>
+                <div><p>{description}</p></div>
             </div>
 
         </div>

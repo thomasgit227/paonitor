@@ -7,8 +7,10 @@ const Home = () => {
     return (
         <div class="pageContainer">
 
-            <div class="head">
-                <h1>Paonitor Control Panel</h1>
+            <div class="header">
+                <div class="headingTitle">
+                    <h1>Paonitor Control Panel</h1>
+                </div>
             </div>
 
             <div class="pageBody">
